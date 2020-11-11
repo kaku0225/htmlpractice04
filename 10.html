@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 300px;
+      position: relative;
+      border: 1px solid black;
+      margin: 50px;
+    }
+
+    .pic{
+      width: 300px;
+    }
+
+    .pic img{
+      width: 100%;
+    }
+
+    .tag{
+      position: absolute;
+      right:-4px;
+      top: -4px;
+    }
+
+    .arrow{
+      width: 0;
+      height: 0;
+      border-left: 3px solid red;
+      border-bottom: 3px solid transparent ;
+      position: absolute;
+      right: 0;
+      /* top: -1; */
+    }
+
+    .tag img{
+      vertical-align: middle;
+    }
+
+    .box2{
+      width: 100;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+      top: -30px;
+      left: -10px;
+      
+    }
+
+
+    .otherarrow{
+      width: 50px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+      text-align: center;
+    }
+
+    .otherarrow::after{
+      content: '';
+      width: 0;
+      height: 0;
+      border-right: red solid 25px;
+      border-bottom:  solid transparent 25px;
+      border-left: red solid 25px;
+      position: absolute;
+      left: 0;
+      bottom: -25px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="tag">
+      <img src="https://picsum.photos/60/25/?random=2">
+      <div class="arrow"></div>
+    </div>
+    <div class="pic">
+      <img src="https://picsum.photos/600/600/?random=1">
+      <h3>123</h3>
+      <p>456</p>
+    </div>
+    <div class="box2">
+      <div class="otherarrow">1.1折</div>
+      
+    </div>
+  </div>
+</body>
+</html>
